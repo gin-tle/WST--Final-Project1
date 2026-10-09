@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2e9">
+  <meta name="description" content="Create, save, and preview your personal portfolio with Portech.">
+  <title>Portech | Portfolio Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Portech home"><span class="brand-mark">p.</span><span>portech</span></a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#guide">Guide</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="topbar-right">
+      <span class="connection" id="connectionStatus"><span class="status-dot"></span><span id="connectionText">Checking cloud setup</span></span>
+      <button class="button button-quiet" id="accountButton" type="button">Log in</button>
+      <button class="button button-dark" id="signupButton" type="button">Sign up</button>
+      <button class="button button-dark" id="logoutButton" type="button" hidden>Log out</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="home-section" id="home" aria-labelledby="homeTitle">
+      <div class="home-copy">
+        <p class="eyebrow"><span class="eyebrow-rule"></span> YOUR WORK, IN YOUR WORDS</p>
+        <h1 id="homeTitle">Make your next<br>move <span>visible.</span></h1>
+        <p class="home-description">A portfolio that brings your best work together. Tell your story, pick a design, and build a page that feels like you.</p>
+        <div class="home-actions">
+          <a class="button button-dark" href="#studio">Build your portfolio <i data-lucide="arrow-up-right"></i></a>
+          <a class="home-secondary" href="#guide">See how it works <i data-lucide="arrow-down"></i></a>
+        </div>
+        <p class="home-note"><span></span> THREE DISTINCT DESIGNS · ONE PLACE FOR YOUR WORK</p>
+      </div>
+      <div class="home-art" aria-label="Example portfolio preview">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+        <article class="showcase-card">
+          <div class="showcase-top"><span>PORTECH / PORTFOLIO 01</span><span>AVAILABLE FOR WORK</span></div>
+          <div class="showcase-profile">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=720&amp;q=85" alt="Portrait used in a sample portfolio">
+            <div><p>DESIGNER &amp; MAKER</p><h2>Good work<br>starts with<br>a point of view.</h2><span>Independent creative · Cebu</span></div>
+          </div>
+          <div class="showcase-bottom"><div><span>SELECTED SKILLS</span><div class="showcase-tags"><i>Identity</i><i>Digital</i><i>Art direction</i></div></div><span class="showcase-index">01 — 03</span></div>
+        </article>
+        <span class="art-caption">A PLACE FOR WHAT YOU MAKE.</span>
+      </div>
+    </section>
+
+    <section class="guide-section" id="guide" aria-labelledby="guideTitle">
+      <div class="guide-heading"><div><p class="eyebrow"><span class="eyebrow-rule"></span> FROM FIRST DRAFT TO FINISHED PAGE</p><h2 id="guideTitle">A clear path<br>to <em>your portfolio.</em></h2></div><p>Everything you need to turn your experience into a thoughtful, shareable portfolio.</p></div>
+      <div class="steps-grid">
+        <article class="guide-step"><span>01</span><i data-lucide="user-round-plus"></i><h3>Create an account</h3><p>Sign up with your name, username, email, and a password.</p></article>
+        <article class="guide-step"><span>02</span><i data-lucide="layout-template"></i><h3>Choose a template</h3><p>Pick a visual direction that suits your work and personality.</p></article>
+        <article class="guide-step"><span>03</span><i data-lucide="notebook-pen"></i><h3>Add your details</h3><p>Bring together your skills, projects, education, and experience.</p></article>
+        <article class="guide-step"><span>04</span><i data-lucide="send"></i><h3>Preview and share</h3><p>Review your page, save it to your account, and open your portfolio.</p></article>
+      </div>
+      <div class="template-gallery-heading"><div><p class="eyebrow">THREE WAYS TO SHOW YOUR WORK</p><h2>Choose your starting point</h2></div><a href="#studio">Customize in the studio <i data-lucide="arrow-up-right"></i></a></div>
+      <div class="template-gallery">
+        <article class="gallery-card">
+          <div class="gallery-art gallery-simple"><div class="gallery-simple-head"><span>PORTFOLIO</span><i></i></div><div class="gallery-simple-body"><span class="gallery-avatar"></span><div><i></i><i></i><i></i></div></div><div class="gallery-simple-foot">SELECTED WORK · ABOUT · CONTACT</div></div>
+          <div class="gallery-card-copy"><div><h3>Simple</h3><p>Clean, calm, and professional.</p></div><button class="gallery-select" type="button" data-template="simple" aria-label="Use Simple template">Use template <i data-lucide="arrow-up-right"></i></button></div>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-art gallery-modern"><aside><i></i><i></i><i></i></aside><div class="gallery-modern-content"><span>01 / PORTFOLIO</span><b>Selected<br>projects</b><i></i><i></i><i></i></div></div>
+          <div class="gallery-card-copy"><div><h3>Modern</h3><p>Structured sections with a bold edge.</p></div><button class="gallery-select" type="button" data-template="modern" aria-label="Use Modern template">Use template <i data-lucide="arrow-up-right"></i></button></div>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-art gallery-creative"><div class="gallery-creative-title"><span>CREATIVE PORTFOLIO</span><b>Make<br>some<br>noise.</b></div><div class="gallery-creative-grid"><i></i><i></i><i></i><i></i></div></div>
+          <div class="gallery-card-copy"><div><h3>Creative</h3><p>An expressive layout for a distinctive voice.</p></div><button class="gallery-select" type="button" data-template="creative" aria-label="Use Creative template">Use template <i data-lucide="arrow-up-right"></i></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="studio-section" id="studio" aria-labelledby="pageTitle">
+      <div class="intro">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-rule"></span> YOUR WORK, IN YOUR WORDS</p>
+          <h1 id="pageTitle">Portfolio <span>studio</span></h1>
+          <p class="intro-copy">Shape your story, choose a look, and publish a portfolio that feels like you.</p>
+        </div>
+        <div class="intro-aside"><span class="step-index">01 <i></i> 03</span><span>BUILD YOUR PROFILE</span></div>
+      </div>
+
+      <div class="workspace">
+      <section class="editor" aria-labelledby="editorTitle">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR DETAILS</p><h2 id="editorTitle">Build your profile</h2></div>
+          <button class="text-button" id="loadButton" type="button">Load saved</button>
+        </div>
+
+        <form id="portfolioForm">
+          <fieldset class="form-section">
+            <legend><span class="legend-number">01</span> The essentials</legend>
+            <div class="field-grid">
+              <label class="field field-wide" for="fullName">Full name<input id="fullName" name="full_name" autocomplete="name" placeholder="e.g. Alex Rivera" required></label>
+              <label class="field" for="email">Email<input id="email" name="email" type="email" autocomplete="email" placeholder="alex@example.com"></label>
+              <label class="field" for="phone">Contact number<input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+1 555 0100"></label>
+              <label class="field field-wide" for="address">Address<input id="address" name="address" autocomplete="street-address" placeholder="City, country"></label>
+              <div class="field field-wide photo-field">
+                <label for="profilePhoto">Profile picture</label>
+                <div class="photo-control"><span class="photo-preview" id="photoPreview">PR</span><label class="button button-quiet upload-button" for="profilePhoto">Choose image</label><input id="profilePhoto" type="file" accept="image/*"><span class="field-hint">JPG, PNG, or WebP</span></div>
+              </div>
+              <label class="field field-wide" for="about">About me<textarea id="about" name="about" rows="4" placeholder="A few lines about what you do and what you care about."></textarea></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section">
+            <legend><span class="legend-number">02</span> Your experience</legend>
+            <div class="field-grid">
+              <label class="field field-wide" for="education">Education<textarea id="education" name="education" rows="3" placeholder="BSc Computer Science | Cebu Institute of Technology | 2022–2026"></textarea><span class="field-hint">One entry per line</span></label>
+              <label class="field field-wide" for="skills">Skills<textarea id="skills" name="skills" rows="2" placeholder="UI design, JavaScript, research, collaboration"></textarea><span class="field-hint">Separate skills with commas</span></label>
+              <label class="field field-wide" for="projects">Projects<textarea id="projects" name="projects" rows="4" placeholder="Project name | What you made and the impact | https://example.com"></textarea><span class="field-hint">One per line: name | description | optional link</span></label>
+              <label class="field field-wide" for="experience">Work experience<textarea id="experience" name="experience" rows="4" placeholder="Role at Company | Dates | What you accomplished"></textarea><span class="field-hint">One entry per line</span></label>
+              <label class="field field-wide" for="links">Social media &amp; website links<textarea id="links" name="links" rows="3" placeholder="LinkedIn | https://linkedin.com/in/yourname"></textarea><span class="field-hint">One per line: label | URL</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form-section template-section">
+            <legend><span class="legend-number">03</span> Choose your template</legend>
+            <div class="template-options" role="group" aria-label="Portfolio template">
+              <button class="template-choice is-selected" type="button" data-template="simple" aria-pressed="true">
+                <span class="template-swatch swatch-simple"><i></i><i></i><i></i></span><span class="template-choice-name">Simple</span><span class="template-choice-note">Clear &amp; classic</span>
+              </button>
+              <button class="template-choice" type="button" data-template="modern" aria-pressed="false">
+                <span class="template-swatch swatch-modern"><i></i><i></i><i></i></span><span class="template-choice-name">Modern</span><span class="template-choice-note">Bold &amp; structured</span>
+              </button>
+              <button class="template-choice" type="button" data-template="creative" aria-pressed="false">
+                <span class="template-swatch swatch-creative"><i></i><i></i><i></i></span><span class="template-choice-name">Creative</span><span class="template-choice-note">Playful &amp; vivid</span>
+              </button>
+            </div>
+          </fieldset>
+
+          <div class="form-actions">
+            <button class="button button-dark" type="submit"><i data-lucide="cloud-upload"></i> Save portfolio</button>
+            <button class="button button-danger" id="deleteButton" type="button" disabled><i data-lucide="trash-2"></i> Delete</button>
+            <span class="save-hint" id="saveHint">Sign in to save to your cloud account.</span>
+          </div>
+        </form>
+      </section>
+
+      <aside class="preview-panel" aria-labelledby="previewTitle">
+        <div class="preview-heading"><div><p class="eyebrow">LIVE PREVIEW</p><h2 id="previewTitle">Your portfolio</h2></div><div class="preview-controls"><span class="live-indicator"><i></i> LIVE</span><button class="button button-quiet open-preview" id="generateButton" type="button"><i data-lucide="external-link"></i> Open portfolio</button></div></div>
+        <div class="portfolio-preview template-simple" id="portfolioPreview" aria-live="polite"></div>
+        <div class="preview-footer"><span id="previewTemplateName">SIMPLE TEMPLATE</span><span>PREVIEW</span></div>
+      </aside>
+      </div>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <section class="about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="about-copy"><p class="eyebrow"><span class="eyebrow-rule"></span> ABOUT PORTECH</p><h2 id="aboutTitle">Your story deserves<br><em>a good home.</em></h2><p>Portech helps students, job seekers, and creative professionals turn their skills and experience into a portfolio they can share with confidence.</p><p>Bring your projects, education, work, and links into one place. Choose one of three distinct templates, make it yours, and keep your portfolio saved to your account.</p><a class="about-link" href="#studio">Start building <i data-lucide="arrow-up-right"></i></a></div>
+      <aside class="about-note"><span class="about-note-mark">p.</span><p>Made for people<br>with things to make.</p><div><span>PORTECH PORTFOLIO STUDIO</span><span>CEBU CITY, PHILIPPINES</span></div></aside>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#top"><span class="brand-mark">p.</span><span>portech</span></a><p>Build your portfolio. Show the work.</p><span>© 2026 Portech</span></footer>
+
+  <div class="modal-backdrop" id="authModal" hidden>
+    <section class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+      <button class="modal-close" id="closeAuth" type="button" aria-label="Close"><i data-lucide="x"></i></button>
+      <p class="eyebrow">YOUR PORTECH ACCOUNT</p>
+      <h2 id="authTitle">Welcome back</h2>
+      <p class="auth-copy" id="authCopy">Log in to save and manage your portfolio in the cloud.</p>
+      <form id="authForm">
+        <fieldset class="signup-fields" id="signupFields" disabled hidden>
+          <label class="field" for="signupFullName">Full name<input id="signupFullName" autocomplete="name" placeholder="Your full name" required></label>
+          <label class="field" for="signupUsername">Username<input id="signupUsername" autocomplete="username" placeholder="Choose a username" required></label>
+        </fieldset>
+        <label class="field" for="authEmail">Email<input id="authEmail" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+        <label class="field" for="authPassword">Password<input id="authPassword" type="password" autocomplete="current-password" minlength="6" required placeholder="At least 6 characters"></label>
+        <label class="field confirm-password" id="confirmPasswordField" hidden for="confirmPassword">Confirm password<input id="confirmPassword" type="password" autocomplete="new-password" minlength="6" placeholder="Re-enter your password" required></label>
+        <button class="button button-dark auth-submit" type="submit" id="authSubmit">Log in</button>
+      </form>
+      <p class="switch-auth"><span id="authSwitchText">New to Portech?</span> <button class="text-button" id="authSwitch" type="button">Create an account</button></p>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
